@@ -1,0 +1,15 @@
+@use './sass/color';
+@use './sass/mixins';
+@use './sass/header';
+
+:root {
+  box-sizing: border-box;
+  background-color: #0e1130;  
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  background-color: transparent;
+}
+
+

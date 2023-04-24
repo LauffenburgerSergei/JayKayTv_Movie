@@ -1,0 +1,62 @@
+@use 'mixins';
+
+
+header {
+  
+    nav {
+      display: flex;
+      
+      
+  
+      img {
+        height: 100px;
+        width: auto;
+      }
+      
+      h1 {
+        padding: 0;
+        margin:0;
+        display: none;
+  
+        @include mixins.tablet {
+          display: inherit;
+          margin: auto 0;
+        } 
+      }
+      ul {
+        display: none;
+  
+        @include mixins.large {
+          display: inherit;
+          list-style: none;
+          margin: auto 5px auto auto;
+        }
+  
+        li {
+          @include mixins.large {
+            margin: auto 15px;
+          }
+        }
+      }
+      
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      
+      #toggle-menu {
+        margin: auto 5px auto auto;
+        background: transparent;
+        border: none;
+        outline:none;
+        font-size: 2em;
+        color: red;
+  
+        @include mixins.large {
+          display: none;
+        }
+      }
+    }
+  
+    
+  }
